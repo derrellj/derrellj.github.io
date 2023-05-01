@@ -1,0 +1,324 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+/* Navbar */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 1480px;
+    height: 75px;
+    background-image: linear-gradient(blue, rgba(0, 0, 255, 0.800), rgba(0, 0, 255, 0.600), rgba(0, 0, 255, 0.800), blue);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 60, 0.4);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: whitesmoke;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.25);
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 25px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(35, 70, 140, 0.700);
+    display: none;
+
+}
+
+ul li a:hover {
+    background: dodgerblue;
+    opacity: .8;
+    font-size: 28px;
+    padding: 17px 25px;
+}
+
+ul li a:active{
+    background: dodgerblue;
+    opacity: .8;
+    font-size: 24px;
+    padding: 15px 20px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.nav-logo {
+
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    width: 250px;
+    height: 65px;
+    left: 1.25%;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.25);
+
+}
+
+
+
+.logo-click {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.trust {
+    font-size: 14px;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.25);
+}
+
+
+/* Homepage */
+
+.home-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding: 1rem;
+    width: 900px;
+    height: 875px;
+    box-shadow: 2px 5px 15px 12px rgba(0, 0, 0, 0.100);
+    left: 300px;
+    top: 250px;
+    z-index: -5;
+}
+
+.heading-home{
+    display: flex;
+    position: absolute;
+    font-size: 100px;
+    padding: 2rem;
+    width: max-content;
+    height: max-content;
+    top: -150px;
+}
+
+.image-container{
+    display: flex;
+    position: absolute;
+    width: 750px;
+    height: 500px auto;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1rem;
+}
+.pic1{
+    float: left;
+    top: 5%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    padding: 1rem;
+    
+}
+
+.content{
+    margin: auto;
+    font-size: 20px;
+    width: max-content;
+    height: auto;
+    line-height: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.nav-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1480px;
+    height: 75px;
+    border: none;
+    background-image: linear-gradient(gray, rgba(0, 0, 0, 0.700), black, rgba(0, 0, 0, 0.700), gray);
+
+}
+
+.item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 125px, auto;
+    height: 50px, auto;
+    border: none;
+}
+
+.item:hover {
+    background-color: dodgerblue;
+    opacity: .9;
+    font-size: 26px;
+    padding: 1rem;
+
+}
+
+.aitem:hover {
+    font-size: 28px;
+    padding: .5rem;
+    font-size: 28px;
+}
+
+.aitem {
+    list-style-type: none;
+    text-decoration: none;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.25);
+    color: whitesmoke;
+    font-size: 24px;
+
+}
+
+.drop-container{
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn{
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.25);
+    color: whitesmoke;
+    font-size: 24px;
+    background: none;
+    border: none;
+
+}
+
+.drop-item
+{
+    display: none;
+    float: none;
+    position: absolute;
+
+}
+
+
+.a-drop{
+    display: block;
+    text-decoration: none;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.25);
+    color: whitesmoke;
+    font-size: 24px;
+
+
+}
+
+.dropbtn .drop-item .a-drop:hover{
+    display: block;
+    background-color: dodgerblue;
+    opacity: .9;
+    padding: 1.5rem;
+    font-size: 28px;
+}
+
+
+/* Navbar bar ends */
+
+/* Home content begins */
+
+/* .home-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 75px;
+    width: 1480px;
+    height: 1000px auto;
+    border: none;
+}
+
+.heading-home {
+    display: flex;
+    position: relative;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    top: 50px;
+}
+
+.image-container {
+    display: flex;
+    position: absolute;
+    top: 125px;
+    width: 850px;
+    height: 800px auto;
+    border: none;
+    box-shadow: 4px 3px 15px 2px rgba(95, 95, 95, 0.2);
+
+}
+
+.pic1{
+    width: 250px;
+    height: 250px;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    padding: 1rem;
+}
+
+.about-me{
+    text-align: justify;
+    padding: 3rem;
+    font-size: 16px;
+    line-height: 200%;
+    
+} */
